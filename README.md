@@ -1,4 +1,4 @@
-# ailab-asr
+# AIlab-ASR
 
 This is web-based real-time Korean automatic speech recognition (ASR) system with [Kaldi](https://github.com/kaldi-asr/kaldi).
 
