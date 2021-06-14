@@ -1,6 +1,8 @@
 # ailab-asr
 
-This is a real-time automatic speech recognition (ASR) system with [Kaldi](https://github.com/kaldi-asr/kaldi) and [GStreamer](https://github.com/alumae/kaldi-gstreamer-server).
+This is web-based real-time Korean automatic speech recognition (ASR) system with [Kaldi](https://github.com/kaldi-asr/kaldi).
+
+
 
 
 
