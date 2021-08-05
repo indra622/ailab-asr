@@ -10,7 +10,7 @@ It is presented in [This webpage](https://indra622.github.io/ailab-asr/demos/dem
 
 ## License
 
-This repository is licensed under the MIT LICENSE - see the [LICENSE.md]() file for details
+This repository is licensed under the MIT LICENSE - see the [LICENSE.md](https://github.com/indra622/ailab-asr/blob/main/LICENSE.md) file for details
 
 ## Contact point
 hosungpark@sogang.ac.kr
