@@ -5,7 +5,7 @@ This is web-based real-time Korean automatic speech recognition (ASR) system wit
 ## Getting started
 
 
-It is presented in [This webpage](https://indra622.github.io/ailab-asr/demos/demo.html) (Korean Only)
+It is presented in [this webpage](https://indra622.github.io/ailab-asr/demos/demo.html) (Korean Only)
 
 
 ## License
