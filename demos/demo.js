@@ -106,18 +106,18 @@ var dictate = new Dictate({
 		},
 		onResults : function(hypos) {
 			hypText = prettyfyHyp(hypos[0].transcript, doUpper, doPrependSpace);
-			newhypText = hypText.replace(' ', '').replace('▁', ' ')
+			
 			val = $("#trans").val();
-			$("#trans").val(val.slice(0, startPosition) + newhypText + val.slice(endPosition));        
-			startPosition = startPosition + newhypText.length;			
+			$("#trans").val(val.slice(0, startPosition) + hypText + val.slice(endPosition));        
+			startPosition = startPosition + hypText.length;			
 			endPosition = startPosition;
 			$("#trans").prop("selectionStart", endPosition);
-			if (/\. *$/.test(newhypText) ||  /\n *$/.test(newhypText)) {
+			if (/\. *$/.test(hypText) ||  /\n *$/.test(hypText)) {
 				doUpper = true;
 			} else {
 				doUpper = false;
 			}
-			doPrependSpace = (newhypText.length > 0) && !(/\n *$/.test(newhypText));
+			doPrependSpace = (hypText.length > 0) && !(/\n *$/.test(hypText));
 		},
 		onError : function(code, data) {
 			dictate.cancel();
@@ -147,7 +147,8 @@ function __serverStatus(msg) {
 }
 
 function __updateTranscript(text) {
-	$("#trans").val(text);
+	newText = text.replace(' ', '').replace('▁', ' ')
+	$("#trans").val(newText);
 }
 
 // Public methods (called from the GUI)
