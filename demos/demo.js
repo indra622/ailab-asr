@@ -106,7 +106,7 @@ var dictate = new Dictate({
 		},
 		onResults : function(hypos) {
 			hypText = prettyfyHyp(hypos[0].transcript, doUpper, doPrependSpace);
-			newhypText = hypText.replace(' ', '').replace('▁', ' ')
+			newhypText = hypText.replaceAll(' ', '').replaceAll('▁', ' ')
 			val = $("#trans").val();
 			$("#trans").val(val.slice(0, startPosition) + newhypText + val.slice(endPosition));        
 			startPosition = startPosition + newhypText.length;			
